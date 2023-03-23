@@ -24,6 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
     path('amoldy_app/', include ('amoldy_app.urls') ),
+    path('basket/', include('basket.urls', namespace='basket')),
     path('tinymce/', include('tinymce.urls')),
 ]
 
